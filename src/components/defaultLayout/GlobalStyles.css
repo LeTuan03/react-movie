@@ -1,0 +1,65 @@
+* {
+  font-family: Roboto;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+html::-webkit-scrollbar {
+  width: 0px;
+}
+.body {
+  /* background-color: #000; */
+  color: #fff;
+  background-image: url("http://c-photo.i-part.com.tw/n1v1/3/7/0/7/1607073/photo/book9/12292766617567t.gif");
+}
+.content {
+  margin-top: 68px;
+  min-height: 300px;
+}
+
+.swiper-slide-active > img {
+  transition: transform 0.3s;
+  animation: scaleUp 1s;
+  border-radius: 10px;
+  padding-right: 10rem;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.swiper-slide-active> div {
+  transition-delay: 2s;
+  animation: slideDown 2.3s;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.popular {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #5e5e5e, rgba(0, 0, 0, 0));
+  }
+}
