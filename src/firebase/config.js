@@ -13,7 +13,7 @@ const firebaseConfig = {
   projectId: "moonnetfix",
   storageBucket: "moonnetfix.appspot.com",
   messagingSenderId: "871753060728",
-  appId: "1:871753060728:web:a208c4763bdbebba02788d",
+  appId: "1:871753060728:web:a208c4763bdbebba027888",
   measurementId: "G-QS8FN438SP"
 };
 
